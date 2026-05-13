@@ -1,0 +1,72 @@
+<!-- Hi Riley, i know you are looking at my source code xD -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glitchbyte</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="hotel" loop hidden>
+        <source src="sounds/homepage.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <h1>GlitchByte</h1>
+        <p id="shownSplash"></p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Projects</h2>
+            <p>Homepage for by random projects that dont exist currently</p>
+            <button>Project page</button>
+        </div>
+        
+        <div class="card">
+            <h2>Shortcuts</h2>
+            <p>Pretty much just my new tab page.</p>
+            <p>Mostly just a personal resource and not</p>
+            <p>actually a main part of the website</p>
+            <a href="shortcuts.html"><button>Shortcuts</button></a>
+        </div>
+
+        <div class="card">
+            <h2>Credits</h2>
+            <p>Riley_VM - Providing me with a basic style.css file that I could edit</p>
+            <p>Toby Fox - Inspiring me to program (also for the music :D)</p>
+            <p>Mozilla - HTML Documentation... seriously this would have been impossible without it</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>I made this - Consolebyte</p>
+        <a href="https://github.com/RealConsoleByte/Glitchbyte">Source code can be found on my GitHub :p</a>
+    </footer>
+
+    <script>
+        const splashTextThings = [
+            "Idk what to put here",
+            "Does anyone actually read these?",
+            "Powered by Caffeine",
+            "Check documentation once, break twice... wait NO-",
+            "What's a WebGL???",
+            "Seems like a not so particularly bad time",
+            "(almost) Dog free",
+            "Contains messy code",
+            "I dont have a copyright :sob:",
+            "WHO DESIGNED HTML?! WHO? WHICH ONE OF YOU",
+            "Why was the music so difficult :sob:"
+        ];
+
+        const splashThingChosen = splashTextThings[Math.floor(Math.random() * splashTextThings.length)];
+
+        document.getElementById("shownSplash").textContent = splashThingChosen;
+
+        window.addEventListener('click', () => {
+            document.getElementById("hotel").play();
+        }, { once: true })
+    </script>
+</body>
+</html>
