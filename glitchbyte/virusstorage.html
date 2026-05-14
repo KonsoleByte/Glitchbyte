@@ -4,9 +4,13 @@
 <head>
     <title>Glitchbyte</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="evilstyle.css">
 </head>
 <body>
+
+    <audio id="alarm" loop hidden>
+        <source src="sounds/alarm.mp3" type="audio/mpeg">
+    </audio>
 
     <header>
         <h1>shortcuts but EVIL</h1>
@@ -45,5 +49,11 @@
         <p>I made this - topaz</p>
         <a href="https://github.com/KonsoleByte/Glitchbyte">no yo computah has virus</a>
     </footer>
+
+    <script>
+        window.addEventListener('click', () => {
+             document.getElementById("alarm").play();
+         }, { once: true })
+    </script>
 </body>
 </html>
