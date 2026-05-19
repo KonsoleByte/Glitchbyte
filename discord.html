@@ -1,0 +1,53 @@
+<!-- Clever... -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glitchbyte</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="tone" loop hidden>
+        <source src="sounds/thirddiscordringtone.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <h1>GlitchByte</h1>
+        <p>Page with all my discord servers</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>GlitchByte</h2>
+            <p>My new server for my projects and stuff</p>
+            <a href="https://discord.gg/tgWdwRVq2w"><button>Join Server</button></a>
+        </div>
+        
+        <div class="card">
+            <h2>Shifting Odyssey</h2>
+            <p>The server for the main project im working on currently</p>
+            <p>It is not full announced yet so the information on it here will be limited</p>
+            <button class="disabledbtn">Server Not Open Yet</button>
+        </div>
+
+        <div class="card">
+            <h2>Roblox Megabyte</h2>
+            <p>This used to be my server but it was given to Owl for reasons undisclosed</p>
+            <p>It is still a really cool server about Roblox and ARGs so you should join it</p>
+            <a href="https://discord.gg/eZEJJp4BTp"><button>Join Server</button></a>
+    </main>
+
+    <footer>
+        <p>I made this - Konsolebyte</p>
+        <a href="https://github.com/KonsoleByte/Glitchbyte">Source code can be found on my GitHub :p</a>
+    </footer>
+
+    <script>
+        window.addEventListener('click', () => {
+            document.getElementById("tone").play();
+        }, { once: true })
+    </script>
+
+</body>
+</html>
